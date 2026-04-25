@@ -81,21 +81,21 @@ sequenceDiagram
     
     Note over R: Gọi Pipeline qua AgentTool
     
-    rect rgb(26, 54, 93)
+    rect rgba(66, 135, 245, 0.15)
     Note over W: PHASE 1 — Chỉ TẬP TRUNG VIẾT
     R->>W: Nội dung gốc
     W->>W: Triển khai/dịch nội dung (không sửa lỗi)
     W-->>R: draft_text (bản nháp)
     end
     
-    rect rgb(26, 58, 42)
+    rect rgba(45, 201, 55, 0.15)
     Note over Q: PHASE 2 — Chỉ TẬP TRUNG SỬA
     R->>Q: Gốc + Bản nháp (để so sánh)
     Q->>Q: Rà soát lỗi chính tả, ngữ pháp, thuật ngữ
     Q-->>R: corrected_text + error_list[]
     end
     
-    rect rgb(58, 26, 46)
+    rect rgba(200, 50, 100, 0.15)
     Note over S: PHASE 3 — Chỉ TẬP TRUNG ĐÁNH GIÁ
     R->>S: Bản nháp + Bản QC + Danh sách lỗi
     S->>S: Chấm điểm nhiều chiều
